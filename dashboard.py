@@ -15,6 +15,7 @@ def setup_database():
         SELECT 
             '2025-01-01 10:00:00'::TIMESTAMP as tpep_pickup_datetime,
             '2025-01-01 10:15:00'::TIMESTAMP as tpep_dropoff_datetime,
+            INTERVAL '15 minutes' as Trip_duration,
             15.0 as trip_distance,
             25.0 as fare_amount,
             1 as passenger_count,
@@ -22,10 +23,6 @@ def setup_database():
             236 as DOLocationID
         FROM range(1000)  -- Create 1000 sample rows
     """)
-    
-    return con
-    # Create sample data tables
-    # Add your table creation logic here
     
     return con
 
