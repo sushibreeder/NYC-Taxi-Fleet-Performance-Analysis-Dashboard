@@ -9,7 +9,21 @@ import numpy as np
 
 def setup_database():
     con = duckdb.connect(':memory:')  # Use in-memory database for Streamlit Cloud
+    # Create sample data tables
+    con.sql("""
+        CREATE TABLE taxi_trips_clean AS 
+        SELECT 
+            '2025-01-01 10:00:00'::TIMESTAMP as tpep_pickup_datetime,
+            '2025-01-01 10:15:00'::TIMESTAMP as tpep_dropoff_datetime,
+            15.0 as trip_distance,
+            25.0 as fare_amount,
+            1 as passenger_count,
+            237 as PULocationID,
+            236 as DOLocationID
+        FROM range(1000)  -- Create 1000 sample rows
+    """)
     
+    return con
     # Create sample data tables
     # Add your table creation logic here
     
