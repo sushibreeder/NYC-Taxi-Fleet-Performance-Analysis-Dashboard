@@ -1,0 +1,8 @@
+streamlit
+pandas
+duckdb
+plotly
+scikit-learn
+xgboost
+matplotlib
+seaborn
