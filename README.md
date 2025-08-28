@@ -4,10 +4,12 @@ A comprehensive Streamlit-based dashboard for analyzing NYC taxi trip data and o
 
 ## 🚕 Project Overview
 
-This dashboard analyzes NYC taxi trip data to provide actionable insights for fleet optimization. It includes performance metrics, trip analysis, and recommendations for improving operational efficiency in the taxi industry.
+This dashboard analyzes NYC taxi trip data to provide actionable insights for fleet optimization. The project demonstrates advanced data analysis techniques including **SQL-based Exploratory Data Analysis (EDA)** using DuckDB and **causal inference** methods to identify relationships between trip factors and performance outcomes. It includes performance metrics, trip analysis, and data-driven recommendations for improving operational efficiency in the taxi industry.
 
 ## ✨ Features
 
+- **SQL-Based EDA**: Advanced exploratory data analysis using DuckDB SQL queries
+- **Causal Inference Analysis**: Statistical methods to identify cause-and-effect relationships
 - **Trip Performance Analysis**: Average trip duration, distance, and fare analysis
 - **Fleet Optimization Insights**: Data-driven recommendations for fleet management
 - **Interactive Visualizations**: Dynamic charts and graphs for data exploration
@@ -19,9 +21,11 @@ This dashboard analyzes NYC taxi trip data to provide actionable insights for fl
 
 - **Python 3.8+**: Core programming language
 - **Streamlit**: Web application framework
-- **DuckDB**: In-memory analytical database
+- **DuckDB**: In-memory analytical database for SQL-based EDA
+- **SQL**: Primary language for data exploration and analysis
 - **Pandas**: Data manipulation and analysis
 - **Plotly**: Interactive data visualizations
+- **Statistical Analysis**: Causal inference and correlation analysis
 - **Git**: Version control
 
 ## 📋 Prerequisites
@@ -55,13 +59,17 @@ The dashboard will open in your default web browser at `http://localhost:8501`
 ### Dashboard Sections
 
 1. **Project Overview**: Summary statistics and key metrics
-2. **Trip Analysis**: Detailed trip performance data
-3. **Fleet Optimization**: Recommendations and insights
-4. **Performance Metrics**: KPIs and operational data
+2. **SQL-Based EDA**: Interactive SQL queries and data exploration
+3. **Causal Inference Analysis**: Statistical relationships and correlations
+4. **Trip Analysis**: Detailed trip performance data
+5. **Fleet Optimization**: Data-driven recommendations and insights
+6. **Performance Metrics**: KPIs and operational data
 
 ### How to Use
 
 - Navigate through different sections using the sidebar
+- **Run SQL queries** for custom data exploration using DuckDB
+- **Analyze causal relationships** between trip factors and outcomes
 - Interact with charts and graphs for detailed analysis
 - View performance metrics and optimization recommendations
 - Export data and insights for further analysis
