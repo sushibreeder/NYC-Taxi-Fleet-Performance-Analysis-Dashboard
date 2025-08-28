@@ -5,7 +5,7 @@ import pandas as pd
 import duckdb
 import numpy as np
 
- Create a connection and tables if they don't exist
+#  Create a connection and tables if they don't exist
 @st.cache_data
 def setup_database():
     con = duckdb.connect(':memory:')  # Use in-memory database for Streamlit Cloud
